@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"> <!-- attribute -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- attribute -->
+  <title>Idah's Electronics Shop</title>
+  <style>
+    body { margin:0; font-family:Arial, sans-serif; }
+    nav { background:#222; padding:15px; }
+    nav a { color:white; margin:0 15px; text-decoration:none; }
+    nav a:hover { color:#ff6600; }
+    .hero {
+      background:url('electronics-banner.jpg') no-repeat center center/cover;
+      height:100vh; display:flex; justify-content:center; align-items:center;
+      color:white; text-align:center; position:relative;
+    }
+    .overlay { background:rgba(0,0,0,0.6); padding:50px; border-radius:10px; }
+    .btn { display:inline-block; margin-top:20px; padding:12px 25px;
+      background:#ff6600; color:white; text-decoration:none; border-radius:5px;
+      transition:0.3s; }
+    .btn:hover { background:#ff3300; transform:scale(1.1); }
+    .products { display:grid; grid-template-columns:repeat(4,1fr); gap:20px; padding:40px; }
+    .card { border:1px solid #ddd; border-radius:8px; padding:20px; text-align:center; }
+    .offers { background:#ffefcc; padding:20px; text-align:center; }
+    marquee { color:#ff3300; font-weight:bold; }
+    .testimonials { background:#f9f9f9; padding:40px; }
+    blockquote { font-style:italic; margin:20px; }
+    footer { background:#222; color:white; text-align:center; padding:20px; }
+    footer a { color:#ff6600; margin:0 10px; }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#products">Products</a>
+    <a href="#offers">Offers</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="overlay">
+      <h1>Idah's Electronics Shop</h1>
+      <p>Your trusted source for quality electronics</p>
+      <a href="#products" class="btn">Shop Now</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Us</h2>
+    <img src="IDAH.jpeg" alt="Idah's Shop" width="300" height="200"> <!-- attributes -->
+    <p>We provide affordable, reliable, and innovative electronics for everyone.</p>
+  </section>
+
+  <!-- Products Section -->
+  <section class="products" id="products">
+    <div class="card">
+      <img src="download.webp" alt="Smartphone" width="150" height="150">
+      <h3>Smartphones</h3>
+      <button>View More</button>
+    </div>
+    <div class="card">
+      <img src="OIP.webp" alt="Laptop" width="150" height="150">
+      <h3>Laptops</h3>
+      <button>View More</button>
+    </div>
+    <div class="card">
+      <img src="OIP.webp" alt="Accessories" width="150" height="150">
+      <h3>Accessories</h3>
+      <button>View More</button>
+    </div>
+    <div class="card">
+      <img src="download (1).webp" alt="Home Appliance" width="150" height="150">
+      <h3>Home Appliances</h3>
+      <button>View More</button>
+    </div>
+  </section>
+
+  <!-- Offers Section -->
+  <section class="offers" id="offers">
+    <h2>Special Offers</h2>
+    <marquee behavior="scroll" direction="left">🔥 20% OFF on Smartphones | Buy 1 Get 1 Free on Accessories 🔥</marquee>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <h2>What Our Customers Say</h2>
+    <blockquote>"Best electronics shop in town!" - Sarah</blockquote>
+    <blockquote>"Affordable prices and great service." - James</blockquote>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form action="#" method="post"> <!-- attributes -->
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required> <!-- attributes -->
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required> <!-- attributes -->
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" cols="30"></textarea> <!-- attributes -->
+      <input type="submit" value="Send">
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Idah's Electronics Shop</p>
+    <a href="#">Facebook</a>
+    <a href="#">Twitter</a>
+    <a href="#">Instagram</a>
+  </footer>
+</body>
+</html>
