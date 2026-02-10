@@ -1,7 +1,7 @@
 # Idah-s-electronic-shop
 Name:Idah Banda
 SIN:2505254636
-Git Repository:
+Git Repository:https://github.com/bidah0109/Idah-s-electronic-shop
 
 *Question 2: HTML Elements*
 1. *Which 5 elements did you find most challenging to implement and why?*
